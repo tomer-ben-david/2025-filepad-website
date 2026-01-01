@@ -1,0 +1,14 @@
+---
+const DOWNLOAD_URL = "mailto:support@filepad.app?subject=FilePad%20Beta%20Access";
+const metaTag = `<meta http-equiv="refresh" content="0;url=${DOWNLOAD_URL}">`;
+const scriptTag = `<script>window.location.href = "${DOWNLOAD_URL}";<\/script>`;
+---
+
+<!doctype html>
+<html>
+  <head set:html={metaTag} />
+  <body>
+    <p>Redirecting to download...</p>
+    <div set:html={scriptTag} />
+  </body>
+</html>

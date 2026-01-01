@@ -1,0 +1,7 @@
+{
+  "version": "v2026.01.01",
+  "downloadURL": "https://filepad.app/download-beta",
+  "checksum": "sha256:TODO",
+  "releaseNotes": "## What's New in Version v2026.01.01\n\n- Initial MVP release\n- Finder right-click compression\n- FilePad batch strip",
+  "critical": false
+}

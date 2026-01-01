@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Privacy Policy - FilePad">
+    <section class="privacy-page">
+        <div class="container">
+            <div class="privacy-content">
+                <h1>Privacy Policy</h1>
+                <p class="last-updated">Last updated: January 1, 2026</p>
+
+                <h2>What FilePad Does</h2>
+                <p>
+                    FilePad is a macOS utility that adds Finder Services for video compression and a lightweight
+                    FilePad strip for batch jobs. Compression runs locally on your Mac.
+                </p>
+
+                <h2>Your Data</h2>
+                <p>
+                    FilePad stores settings locally on your Mac. FilePad does not require an account and does not
+                    operate a file-processing server.
+                </p>
+                <p>
+                    When you compress a video, the file is processed locally and the output is saved next to the
+                    original file.
+                </p>
+
+                <h2>Third-Party Services</h2>
+                <p>
+                    FilePad may download FFmpeg binaries on demand and verifies checksums before use. This download
+                    only happens when needed and does not include your files.
+                </p>
+
+                <h2>Analytics</h2>
+                <p>
+                    FilePad does not require analytics to function. If any optional usage metrics are introduced,
+                    you will be able to disable them in Settings.
+                </p>
+
+                <h2>Updates</h2>
+                <p>We may update this policy. Check back occasionally.</p>
+
+                <h2>Contact</h2>
+                <p>Questions? Email <a href="mailto:support@filepad.app">support@filepad.app</a></p>
+                <p>See also: <a href="/terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .privacy-page {
+        padding: 120px 0 60px;
+        min-height: 80vh;
+    }
+
+    .privacy-content {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .privacy-content h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1f2933;
+        margin-bottom: 0.5rem;
+        font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    .last-updated {
+        color: #6a6f7c;
+        font-size: 0.9rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .privacy-content h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #1f2933;
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .privacy-content p {
+        color: #6a6f7c;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    .privacy-content a {
+        color: #ff5d3b;
+        text-decoration: none;
+    }
+
+    .privacy-content a:hover {
+        text-decoration: underline;
+    }
+
+    .privacy-content strong {
+        color: #1f2933;
+    }
+
+    @media (max-width: 768px) {
+        .privacy-page {
+            padding: 100px 0 40px;
+        }
+
+        .privacy-content h1 {
+            font-size: 2rem;
+        }
+    }
+</style>

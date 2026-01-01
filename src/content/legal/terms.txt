@@ -1,0 +1,30 @@
+FilePad Terms of Service
+
+By installing or using FilePad ("the App"), you agree to these Terms of Service. If you do not agree, do not use the App.
+
+1. The App
+FilePad is a macOS utility that adds Finder Services for video compression and a lightweight FilePad strip for batch jobs. The App processes files locally on your Mac.
+
+2. License
+We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for its intended purpose. All rights not expressly granted are reserved.
+
+3. Your Responsibilities
+You are responsible for the files you select and the results you generate. Ensure you have the right to process and store the files you compress.
+
+4. Local Processing
+Compression runs locally on your Mac. Output files are saved next to the originals with a "-compressed" suffix (or similar when naming collisions occur).
+
+5. Availability and Updates
+We may update or modify the App at any time. Features may change or be removed. We do not guarantee uninterrupted availability.
+
+6. Disclaimer
+The App is provided "as is" without warranties of any kind. We disclaim all warranties, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+7. Limitation of Liability
+To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, revenue, or profits arising from use of the App.
+
+8. Changes to These Terms
+We may update these Terms from time to time. Continued use of the App after changes means you accept the updated Terms.
+
+9. Contact
+Questions about these Terms? Email support@filepad.app

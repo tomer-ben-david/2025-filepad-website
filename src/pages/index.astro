@@ -1,0 +1,1059 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+
+const CONTACT_EMAIL = "support@filepad.app";
+---
+
+<BaseLayout
+    title="FilePad - Right-click video compression for macOS"
+    description="FilePad adds Finder right-click actions for instant video compression and a lightweight FilePad strip for batch jobs."
+>
+    <!-- Hero -->
+    <section class="quick-action">
+        <div class="container">
+            <div class="quick-action-card">
+                <div class="quick-action-header">
+                    <p class="quick-action-eyebrow">macOS video compression</p>
+                    <h2>Compress videos from Finder in seconds.</h2>
+                    <p class="quick-action-description">
+                        FilePad adds two simple right-click actions: <strong>FilePad: Compress Video</strong> for instant output,
+                        and <strong>FilePad: Add to FilePad</strong> for batch jobs inside a minimal strip.
+                    </p>
+                </div>
+                <div class="quick-action-body">
+                    <div class="quick-action-details">
+                        <ol class="quick-action-steps">
+                            <li>Select one or more videos in Finder</li>
+                            <li>Right-click and choose <strong>FilePad: Compress Video</strong> or <strong>Add to FilePad</strong></li>
+                            <li>Get "-compressed" copies next to the originals, with <strong>Reveal in Finder</strong></li>
+                        </ol>
+                        <p class="quick-action-note">
+                            No accounts. No cloud. A balanced H.264 preset keeps quality while shrinking file sizes.
+                        </p>
+                        <div class="quick-action-actions">
+                            <a href={`mailto:${CONTACT_EMAIL}`} class="btn btn-primary">Request the beta</a>
+                            <a href="#screenshots" class="btn btn-secondary">See screenshots</a>
+                        </div>
+                        <p class="quick-action-meta">
+                            <span class="download-version">macOS 13.0+</span>
+                            <span class="download-size">· Free during MVP</span>
+                        </p>
+                        <div class="quick-action-badges">
+                            <span class="badge">Finder Services</span>
+                            <span class="badge">Local processing</span>
+                        </div>
+                    </div>
+                    <div class="quick-action-media">
+                        <img src="/assets/filepad-context-menu.jpg" alt="FilePad Finder context menu" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where It Works -->
+    <section id="where" class="where">
+        <div class="container">
+            <h3>Built around Finder, nothing else.</h3>
+            <p class="where-subtitle">
+                FilePad focuses on two doors: an instant right-click compression and a small batch strip that stays out of your way.
+            </p>
+
+            <div class="where-grid">
+                <div class="where-card">
+                    <div class="where-card-header">
+                        <div class="where-icon-badge">
+                            <Icon name="folder" class="icon" title="Finder actions" />
+                        </div>
+                        <div>
+                            <h4>Finder actions</h4>
+                            <p>Right-click in Finder to run FilePad Services</p>
+                        </div>
+                    </div>
+                    <ul class="where-list">
+                        <li><span class="where-item-title">FilePad: Compress Video</span><span class="where-item-desc">One click, one output.</span></li>
+                        <li><span class="where-item-title">FilePad: Add to FilePad</span><span class="where-item-desc">Queue for batching.</span></li>
+                        <li><span class="where-item-title">FilePad: Customize Menu</span><span class="where-item-desc">Open Services settings.</span></li>
+                    </ul>
+                </div>
+
+                <div class="where-card">
+                    <div class="where-card-header">
+                        <div class="where-icon-badge">
+                            <Icon name="app" class="icon" title="FilePad strip" />
+                        </div>
+                        <div>
+                            <h4>FilePad strip</h4>
+                            <p>A compact list for 1 to 20 items</p>
+                        </div>
+                    </div>
+                    <ul class="where-list">
+                        <li><span class="where-item-title">Queue list</span><span class="where-item-desc">Filename + size at a glance.</span></li>
+                        <li><span class="where-item-title">Compress Videos</span><span class="where-item-desc">Batch output in place.</span></li>
+                        <li><span class="where-item-title">Clear All</span><span class="where-item-desc">Reset the list in one click.</span></li>
+                    </ul>
+                </div>
+
+                <div class="where-card">
+                    <div class="where-card-header">
+                        <div class="where-icon-badge">
+                            <Icon name="compress" class="icon" title="Progress window" />
+                        </div>
+                        <div>
+                            <h4>Progress window</h4>
+                            <p>Simple status with reveal controls</p>
+                        </div>
+                    </div>
+                    <ul class="where-list">
+                        <li><span class="where-item-title">Progress bar</span><span class="where-item-desc">See the current batch.</span></li>
+                        <li><span class="where-item-title">Hide</span><span class="where-item-desc">Keep working while it runs.</span></li>
+                        <li><span class="where-item-title">Reveal in Finder</span><span class="where-item-desc">Jump to the output.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section id="screenshots" class="guides">
+        <div class="container">
+            <div class="guides-header">
+                <h3>See FilePad in action</h3>
+                <p class="guides-subtitle">Real screenshots from the current MVP build.</p>
+            </div>
+
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <div class="guide-thumbnail">
+                        <img src="/assets/filepad-context-menu.jpg" alt="Finder context menu with FilePad actions" loading="lazy">
+                    </div>
+                    <div class="guide-content">
+                        <h4>Right-click menu</h4>
+                        <p>FilePad actions live inside Finder Services.</p>
+                        <span class="guide-tag">Finder</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-thumbnail">
+                        <img src="/assets/filepad-progress-start.jpg" alt="Compression progress window" loading="lazy">
+                    </div>
+                    <div class="guide-content">
+                        <h4>Compression in progress</h4>
+                        <p>Clean progress window with a hide button.</p>
+                        <span class="guide-tag">Progress</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-thumbnail">
+                        <img src="/assets/filepad-complete.jpg" alt="Compression complete window" loading="lazy">
+                    </div>
+                    <div class="guide-content">
+                        <h4>Compression complete</h4>
+                        <p>Reveal outputs immediately after the job ends.</p>
+                        <span class="guide-tag">Done</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-thumbnail">
+                        <img src="/assets/filepad-pad.jpg" alt="FilePad strip for batching" loading="lazy">
+                    </div>
+                    <div class="guide-content">
+                        <h4>FilePad strip</h4>
+                        <p>Batch compression without leaving Finder.</p>
+                        <span class="guide-tag">Batching</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <h3>Made for fast, repeatable compression</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><Icon name="compress" class="icon" title="Instant compression" /></div>
+                    <h4>Instant compression</h4>
+                    <p>Right-click a video and generate a "-compressed" copy next to the original.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><Icon name="app" class="icon" title="Batch strip" /></div>
+                    <h4>Minimal batch strip</h4>
+                    <p>Add multiple files, review the queue, and compress them together in one pass.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><Icon name="folder" class="icon" title="Finder native" /></div>
+                    <h4>Finder-native workflow</h4>
+                    <p>Actions live in Finder Services, so nothing else needs to stay open.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><Icon name="check" class="icon" title="Output clarity" /></div>
+                    <h4>Clear output naming</h4>
+                    <p>Outputs use a "-compressed" suffix with automatic collision handling.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><Icon name="lock" class="icon" title="Local processing" /></div>
+                    <h4>Local by default</h4>
+                    <p>Compression runs on your Mac with dynamic FFmpeg download and verification.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><Icon name="rocket" class="icon" title="Quick setup" /></div>
+                    <h4>Right-click customization</h4>
+                    <p>Open System Settings and show or hide FilePad services any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h3>Pricing</h3>
+            <p class="pricing-subtitle">
+                FilePad is free during the MVP. Launch pricing will keep it lightweight and accessible.
+            </p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card pricing-card-featured">
+                    <div class="pricing-plan">MVP Access</div>
+                    <div class="pricing-price">Free</div>
+                    <ul class="pricing-list">
+                        <li>Unlimited compressions</li>
+                        <li>Batch strip included</li>
+                        <li>Same-folder output</li>
+                        <li>Services customization</li>
+                    </ul>
+                    <a href={`mailto:${CONTACT_EMAIL}`} class="btn btn-primary">Request access</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-plan">Launch</div>
+                    <div class="pricing-price">Simple pricing</div>
+                    <ul class="pricing-list">
+                        <li>One-time purchase option</li>
+                        <li>App Store release</li>
+                        <li>Same workflow, no subscriptions</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary">Stay updated</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h3>How it works</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Select videos</h4>
+                        <p>Choose single files or a batch in Finder.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Pick FilePad</h4>
+                        <p>Compress instantly or add to the FilePad strip.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Reveal outputs</h4>
+                        <p>Compressed files save next to the originals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="download">
+        <div class="container">
+            <h3>Get FilePad</h3>
+            <div class="download-content">
+                <div class="download-info">
+                    <h4>Join the MVP access list</h4>
+                    <p>
+                        FilePad is in active development. Request beta access and we will send the latest build and
+                        setup notes as soon as it is ready for you.
+                    </p>
+                    <div class="system-requirements">
+                        <h5>System Requirements</h5>
+                        <ul>
+                            <li>macOS 13.0 or later</li>
+                            <li>Local disk space for compressed outputs</li>
+                            <li>Finder Services enabled</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="download-box">
+                    <div class="download-card">
+                        <div class="app-icon">
+                            <Icon name="compress" class="icon-download" />
+                        </div>
+                        <h4>FilePad Beta</h4>
+                        <p class="version">Private MVP build</p>
+                        <div class="download-buttons">
+                            <a href={`mailto:${CONTACT_EMAIL}`} class="btn btn-download" id="download-btn-2">
+                                <span class="download-icon">⬇️</span>
+                                Request access
+                            </a>
+                        </div>
+                        <p class="download-size">We reply with a download link.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="installation-steps">
+                <h4>What to expect</h4>
+                <ol>
+                    <li>We confirm your access request</li>
+                    <li>You receive the latest build</li>
+                    <li>Enable FilePad in System Settings</li>
+                    <li>Right-click and compress immediately</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>Does FilePad upload my videos?</h4>
+                    <p>No. Compression runs locally on your Mac. Files never leave your machine.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Where do the outputs go?</h4>
+                    <p>Compressed videos are saved next to the original with a "-compressed" suffix.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I hide a menu item?</h4>
+                    <p>Use FilePad: Customize Right Click Menu to open System Settings and toggle Services.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What file types are supported?</h4>
+                    <p>FilePad targets common video formats such as MP4, MOV, and AVI.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I batch compress?</h4>
+                    <p>Yes. Add multiple files to the FilePad strip, then compress them in one run.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+.quick-action {
+    background: radial-gradient(1200px circle at 10% 0%, rgba(255, 107, 74, 0.18), transparent 55%),
+      radial-gradient(900px circle at 85% 10%, rgba(255, 164, 120, 0.2), transparent 50%),
+      #fff8f3;
+    padding: 8rem 0 4rem;
+}
+
+.quick-action-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 3rem;
+    box-shadow: 0 25px 55px rgba(29, 23, 19, 0.15);
+    border: 1px solid rgba(255, 120, 86, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.quick-action-header {
+    width: 100%;
+}
+
+.quick-action-body {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.quick-action-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.quick-action-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ff6b4a;
+    margin-bottom: 0.75rem;
+}
+
+.quick-action-header h2 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #1e1a18;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+    font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.quick-action-description {
+    font-size: 1.15rem;
+    color: #5b6472;
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.quick-action-steps {
+    counter-reset: quick-step;
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.quick-action-steps li {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.02rem;
+    color: #1f2933;
+}
+
+.quick-action-steps li::before {
+    counter-increment: quick-step;
+    content: counter(quick-step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background: #ff6b4a;
+    color: #ffffff;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: 0 10px 22px rgba(255, 107, 74, 0.3);
+}
+
+.quick-action-note {
+    color: #6a6f7c;
+    font-size: 0.95rem;
+}
+
+.quick-action-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 1rem;
+}
+
+.quick-action-meta {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #6a6f7c;
+    margin-bottom: 1rem;
+}
+
+.quick-action-meta .download-size {
+    opacity: 0.8;
+}
+
+.quick-action-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.quick-action-media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 280px;
+}
+
+.quick-action-media img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    box-shadow: 0 30px 60px rgba(29, 23, 19, 0.25);
+    border: 6px solid #fff7f1;
+}
+
+.where {
+    padding: 5rem 0;
+    background: #ffffff;
+}
+
+.where h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 1rem;
+    font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.where-subtitle {
+    text-align: center;
+    color: #6a6f7c;
+    max-width: 760px;
+    margin: 0 auto 3rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.where-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.where-card {
+    background: #fff7f3;
+    border: 1px solid rgba(255, 120, 86, 0.2);
+    border-radius: 18px;
+    padding: 1.75rem;
+}
+
+.where-card-header {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.where-icon-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: rgba(255, 107, 74, 0.12);
+    color: #ff6b4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    border: 1px solid rgba(255, 107, 74, 0.25);
+}
+
+:global(.icon) {
+    width: 22px;
+    height: 22px;
+}
+
+:global(.icon-sm) {
+    width: 18px;
+    height: 18px;
+}
+
+.where-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin: 0;
+}
+
+.where-card p {
+    color: #6a6f7c;
+    margin-top: 0.25rem;
+    font-size: 0.95rem;
+}
+
+.where-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    color: #374151;
+}
+
+.where-list li {
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.where-item-title {
+    font-weight: 700;
+    color: #1f2933;
+}
+
+.where-item-desc {
+    color: #6a6f7c;
+    font-weight: 500;
+}
+
+.where-item-desc::before {
+    content: " - ";
+    color: #c7b6ae;
+    font-weight: 500;
+}
+
+.where-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ff6b4a;
+    font-weight: 700;
+}
+
+.guides {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #ffffff 0%, #fff2e7 100%);
+}
+
+.guides-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.guides-header h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 0.75rem;
+    font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.guides-subtitle {
+    color: #6a6f7c;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.guide-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(29, 23, 19, 0.12);
+    border: 1px solid rgba(255, 120, 86, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #2b1f1a;
+    overflow: hidden;
+}
+
+.guide-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guide-content {
+    padding: 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2933;
+    margin-bottom: 0.5rem;
+}
+
+.guide-content p {
+    color: #6a6f7c;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.guide-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #b33920;
+    background: rgba(255, 107, 74, 0.12);
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    align-self: flex-start;
+}
+
+.features {
+    padding: 6rem 0;
+    background: #fff7f3;
+}
+
+.features h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 2.5rem;
+    font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 120, 86, 0.2);
+    box-shadow: 0 12px 30px rgba(29, 23, 19, 0.08);
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: rgba(255, 107, 74, 0.12);
+    color: #ff6b4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: #6a6f7c;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.pricing {
+    padding: 5.5rem 0;
+    background: #ffffff;
+}
+
+.pricing h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 1rem;
+    font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.pricing-subtitle {
+    text-align: center;
+    color: #6a6f7c;
+    max-width: 620px;
+    margin: 0 auto 3rem;
+    font-size: 1.05rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.pricing-card {
+    background: #fff7f3;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 120, 86, 0.2);
+    box-shadow: 0 16px 32px rgba(29, 23, 19, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.pricing-card-featured {
+    background: #1f1b19;
+    color: #fff7f3;
+    border: 1px solid rgba(255, 120, 86, 0.45);
+}
+
+.pricing-card-featured .btn {
+    align-self: flex-start;
+}
+
+.pricing-card-featured .pricing-list li {
+    color: #f0e7e1;
+}
+
+.pricing-plan {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    color: #ff6b4a;
+}
+
+.pricing-card-featured .pricing-plan {
+    color: #ffb092;
+}
+
+.pricing-price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pricing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.pricing-list li {
+    color: #6a6f7c;
+}
+
+.how-it-works {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #fff7f3 0%, #ffffff 100%);
+}
+
+.how-it-works h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 2.5rem;
+    font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.step {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.75rem;
+    border: 1px solid rgba(255, 120, 86, 0.15);
+    box-shadow: 0 12px 26px rgba(29, 23, 19, 0.08);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: rgba(255, 107, 74, 0.15);
+    color: #ff6b4a;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-content h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 0.3rem;
+}
+
+.step-content p {
+    color: #6a6f7c;
+    font-size: 0.95rem;
+}
+
+.download {
+    padding: 5.5rem 0;
+    background: #fff7f3;
+}
+
+.download h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 2.5rem;
+    font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.download-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.download-info h4 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 0.75rem;
+}
+
+.download-info p {
+    color: #6a6f7c;
+    margin-bottom: 1.5rem;
+}
+
+.system-requirements h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 0.5rem;
+}
+
+.system-requirements ul {
+    padding-left: 1.2rem;
+    color: #6a6f7c;
+    line-height: 1.7;
+}
+
+.download-box {
+    display: flex;
+    justify-content: center;
+}
+
+.download-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 120, 86, 0.2);
+    box-shadow: 0 16px 30px rgba(29, 23, 19, 0.1);
+    text-align: center;
+    min-width: 240px;
+}
+
+.app-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    border-radius: 18px;
+    background: rgba(255, 107, 74, 0.12);
+    color: #ff6b4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-download {
+    width: 26px;
+    height: 26px;
+}
+
+.download-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.download-card .version {
+    color: #6a6f7c;
+    margin-bottom: 1.5rem;
+}
+
+.download-size {
+    color: #6a6f7c;
+    font-size: 0.9rem;
+}
+
+.installation-steps {
+    margin-top: 3rem;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 120, 86, 0.15);
+    box-shadow: 0 14px 28px rgba(29, 23, 19, 0.08);
+}
+
+.installation-steps h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 1rem;
+}
+
+.installation-steps ol {
+    padding-left: 1.2rem;
+    color: #6a6f7c;
+    line-height: 1.7;
+}
+
+.faq {
+    padding: 5rem 0 6rem;
+    background: #ffffff;
+}
+
+.faq h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 2.5rem;
+    font-family: 'Space Grotesk', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.faq-list {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #fff7f3;
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 120, 86, 0.18);
+}
+
+.faq-item h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    color: #6a6f7c;
+}
+
+@media (max-width: 768px) {
+    .quick-action {
+        padding: 7rem 0 3rem;
+    }
+
+    .quick-action-header h2 {
+        font-size: 2.4rem;
+    }
+
+    .quick-action-card {
+        padding: 2rem;
+    }
+}
+</style>
